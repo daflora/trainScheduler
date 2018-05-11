@@ -163,7 +163,7 @@
 
       console.log(newName);
 
-      $("#train-schedules > tbody").append("<tr><td>" + newName + "</td><td>" + newDestination + "</td><td>" +
+      $("#train-schedules > tbody").append("<tr><th scope='row'>" + newName + "</th><td>" + newDestination + "</td><td>" +
       newFrequency + "</td><td>" + newnextArrival + "</td><td>" + nextTrain + "</td></tr>");
     }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);
